@@ -1,0 +1,167 @@
+[pIRS] Program:        pirs (Profile-based Illumina pair-end Reads Simulator)
+[pIRS] Version:        2.0.0
+[pIRS] Author:         Jianying Yuan (BGI-Shenzhen)
+[pIRS] Contact:        yuanjianying@genomics.org.cn
+[pIRS] Compile Date:   Feb 14 2018 time: 15:16:43
+[pIRS] Current time:   Thu Apr 19 12:44:47 2018
+[pIRS] Command line:   pirs simulate -x 50 -m 400 -v 20 -l 100 --error-rate=0.01 genom.fna.gz
+[pIRS] 
+[pIRS] Loading base-calling profile /usr/local/share/pirs/Base-Calling_Profiles/humNew.PE100.matrix.gz
+[pIRS] Loaded base-calling profile header:
+[pIRS]    num_ref_bases      = 4
+[pIRS]    num_cycles         = 200
+[pIRS]    num_seq_bases      = 4
+[pIRS]    num_quality_scores = 41
+[pIRS] Loading DistMatrix of base-calling profile
+[pIRS] Loading QTransMatrix of base-calling profile
+[pIRS] Done loading Base-Calling profile.
+[pIRS] Loading InDel error profile /usr/local/share/pirs/InDel_Profiles/phixv2.InDel.matrix
+[pIRS] Indel error profile statistics:
+[pIRS]     max_indel_len = 3
+[pIRS]     num_cycles    = 200
+[pIRS]     read_1_count  = 147091454
+[pIRS]     read_2_count  = 145785569
+[pIRS]     Insertion-bp rate of 100-bp read 1 = 0.000478%
+[pIRS]     Deletion-bp rate of 100-bp read 1  = 0.001118%
+[pIRS]     Insertion-bp rate of 100-bp read 2 = 0.000837%
+[pIRS]     Deletion-bp rate of 100-bp read 2  = 0.001551%
+[pIRS] Done loading InDel error profile.
+[pIRS] Loading GC bias profile /usr/local/share/pirs/GC-depth_Profiles/humNew.gcdep_200.dat
+[pIRS] GC bias profile (GC content, relative abundance), showing every 10%
+[pIRS]     0%	0.00422544
+[pIRS]     10%	0.0909624
+[pIRS]     20%	0.782551
+[pIRS]     30%	0.966385
+[pIRS]     40%	0.950876
+[pIRS]     50%	0.783616
+[pIRS]     60%	0.554585
+[pIRS]     70%	0.260476
+[pIRS]     80%	0.0578053
+[pIRS]     90%	0.00422544
+[pIRS]     100%	0.00422544
+[pIRS] Done loading GC bias profile.
+[pIRS] 
+[pIRS] Beginning simulation with the following parameters:
+[pIRS] 
+[pIRS] Read length:                      100
+[pIRS] Insert length mean:               400
+[pIRS] Insert length standard deviation: 20
+[pIRS] Coverage:                         50
+[pIRS] Diploid:                          no
+[pIRS] Cyclized (jumping library):       no
+[pIRS] Simulate substitution errors:     yes
+[pIRS] Substitution error rate:          0.01
+[pIRS] Base-calling profile:             /usr/local/share/pirs/Base-Calling_Profiles/humNew.PE100.matrix.gz
+[pIRS] Substitution error algorithm:     quality transition mode algorithm
+[pIRS] Simulate InDel errors:            yes
+[pIRS] InDel error profile:              /usr/local/share/pirs/InDel_Profiles/phixv2.InDel.matrix
+[pIRS] Simulate GC content bias:         yes
+[pIRS] GC bias profile:                  /usr/local/share/pirs/GC-depth_Profiles/humNew.gcdep_200.dat
+[pIRS] Output type:                      text
+[pIRS] Output directory:                 .
+[pIRS] Indiv name:                       
+[pIRS] Simulate quality values:          yes
+[pIRS] ASCII shift of quality value      33
+[pIRS] Mode of mask quality:             None
+[pIRS] Random seed:                      1524141887
+[pIRS] Number of simulator threads:      1
+[pIRS] 
+[pIRS] Reading scaffold "NC_011728.1 Borrelia burgdorferi ZS7, complete genome" into memory
+[pIRS] Simulating reads from scaffold "NC_011728.1 Borrelia burgdorferi ZS7, complete genome" (length = 906707)
+[pIRS] Simulated 25000 of 226676 read pairs
+[pIRS] Simulated 50000 of 226676 read pairs
+[pIRS] Simulated 75000 of 226676 read pairs
+[pIRS] Simulated 100000 of 226676 read pairs
+[pIRS] Simulated 125000 of 226676 read pairs
+[pIRS] Simulated 150000 of 226676 read pairs
+[pIRS] Simulated 175000 of 226676 read pairs
+[pIRS] Simulated 200000 of 226676 read pairs
+[pIRS] Simulated 225000 of 226676 read pairs
+[pIRS] Simulated 226676 of 226676 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011728.1 Borrelia burgdorferi ZS7, complete genome" (length = 906707)
+[pIRS] Reading scaffold "NC_011724.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp26, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011724.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp26, complete sequence" (length = 26514)
+[pIRS] Simulated 6628 of 6628 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011724.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp26, complete sequence" (length = 26514)
+[pIRS] Reading scaffold "NC_011731.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-1, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011731.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-1, complete sequence" (length = 30330)
+[pIRS] Simulated 7582 of 7582 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011731.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-1, complete sequence" (length = 30330)
+[pIRS] Reading scaffold "NC_011735.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-12, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011735.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-12, complete sequence" (length = 29806)
+[pIRS] Simulated 7451 of 7451 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011735.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-12, complete sequence" (length = 29806)
+[pIRS] Reading scaffold "NC_011720.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-3+10, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011720.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-3+10, complete sequence" (length = 48168)
+[pIRS] Simulated 12042 of 12042 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011720.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-3+10, complete sequence" (length = 48168)
+[pIRS] Reading scaffold "NC_011736.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-4, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011736.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-4, complete sequence" (length = 30964)
+[pIRS] Simulated 7741 of 7741 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011736.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-4, complete sequence" (length = 30964)
+[pIRS] Reading scaffold "NC_011722.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-9, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011722.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-9, complete sequence" (length = 30467)
+[pIRS] Simulated 7616 of 7616 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011722.1 Borrelia burgdorferi ZS7 plasmid ZS7_cp32-9, complete sequence" (length = 30467)
+[pIRS] Reading scaffold "NC_011782.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp17, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011782.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp17, complete sequence" (length = 17266)
+[pIRS] Simulated 4316 of 4316 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011782.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp17, complete sequence" (length = 17266)
+[pIRS] Reading scaffold "NC_011783.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp25, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011783.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp25, complete sequence" (length = 24326)
+[pIRS] Simulated 6081 of 6081 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011783.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp25, complete sequence" (length = 24326)
+[pIRS] Reading scaffold "NC_011780.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp28-1, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011780.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp28-1, complete sequence" (length = 23422)
+[pIRS] Simulated 5855 of 5855 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011780.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp28-1, complete sequence" (length = 23422)
+[pIRS] Reading scaffold "NC_011779.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp28-2, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011779.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp28-2, complete sequence" (length = 29758)
+[pIRS] Simulated 7439 of 7439 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011779.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp28-2, complete sequence" (length = 29758)
+[pIRS] Reading scaffold "NC_011781.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp28-3, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011781.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp28-3, complete sequence" (length = 28414)
+[pIRS] Simulated 7103 of 7103 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011781.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp28-3, complete sequence" (length = 28414)
+[pIRS] Reading scaffold "NC_011785.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp28-4, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011785.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp28-4, complete sequence" (length = 28885)
+[pIRS] Simulated 7221 of 7221 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011785.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp28-4, complete sequence" (length = 28885)
+[pIRS] Reading scaffold "NC_011778.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp36, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011778.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp36, complete sequence" (length = 36852)
+[pIRS] Simulated 9213 of 9213 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011778.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp36, complete sequence" (length = 36852)
+[pIRS] Reading scaffold "NC_011784.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp54, complete sequence" into memory
+[pIRS] Simulating reads from scaffold "NC_011784.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp54, complete sequence" (length = 53615)
+[pIRS] Simulated 13403 of 13403 read pairs
+[pIRS] Done simulating reads from scaffold "NC_011784.1 Borrelia burgdorferi ZS7 plasmid ZS7_lp54, complete sequence" (length = 53615)
+[pIRS] 
+[pIRS] Simulation complete (14 seconds elapsed)
+[pIRS] 
+[pIRS] Bases in reference sequences:    1345494
+[pIRS] Read pairs simulated:            336367
+[pIRS] Bases in reads:                  67273400
+[pIRS] Coverage:                        50.00
+[pIRS] Substitution error count:        908887
+[pIRS] Average substitution error rate: 1.351%
+[pIRS] Insertion count:                 307
+[pIRS] Deletion count:                  750
+[pIRS] Average insertion rate:          0.00046%
+[pIRS] Average deletion rate:           0.00111%
+[pIRS] Average insertion length:        1.09
+[pIRS] Average deletion length:         1.04
+[pIRS] Fragments affected by GC bias:   8.37%
+[pIRS] Bases masked by EAMSS algorithm: 0
+[pIRS] 
+[pIRS] The simulated reads are in the files:
+[pIRS]     ./Sim_100_400_1.fq
+[pIRS]     ./Sim_100_400_2.fq
+[pIRS] 
+[pIRS] Information about each simulated read has been logged to the file:
+[pIRS]     ./Sim_100_400.read.info
+[pIRS] 
+[pIRS] The insert length distribution has been logged to the file:
+[pIRS]     ./Sim_100_400.insert_len.distr
+[pIRS] 
+[pIRS] The error position distribution has been logged to the file:
+[pIRS]     ./Sim_100_400.error_rate.distr
